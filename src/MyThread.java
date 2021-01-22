@@ -46,7 +46,7 @@ public class MyThread extends Thread{
             ImageIO.write(image, "png", os);
         } catch (IOException e) {
             e.printStackTrace();
-            System.out.println("Проблема с конверацией файла");
+            System.out.println("Проблема с конвертацией файла");
         }
         InputStream inputStr = new ByteArrayInputStream(os.toByteArray());
 
