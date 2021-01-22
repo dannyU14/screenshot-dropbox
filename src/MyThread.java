@@ -53,7 +53,6 @@ public class MyThread extends Thread{
         //3 - заливаем файл в Дропбокс
 
         try {
-            //вместо InputStream in = new FileInputStream("/Users/daniella/Desktop/"); :
             InputStream in = inputStr;
             FileMetadata metadata = client.files().uploadBuilder("/" + time + ".png").uploadAndFinish(in);
             //название в дропбоксе будет форматированное (время)
